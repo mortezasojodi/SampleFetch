@@ -58,6 +58,7 @@ fun ChatListPage() {
 
 
     when (val e = state) {
+
         is ChatListViewModel.ChatState.Loading -> Loading()
         is ChatListViewModel.ChatState.Success -> BuildBody(e.data, { onEndList() })
         else -> Empty()
