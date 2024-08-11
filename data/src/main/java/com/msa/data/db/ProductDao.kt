@@ -7,9 +7,8 @@ import androidx.room.Query
 
 @Dao
 interface ProductDao {
-
     @Query("Select * From productEntity")
-    fun getAll() : List<ProductLocalEntity>
+    fun getAll(): List<ProductLocalEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun saveProduct(productEntity: List<ProductLocalEntity>)
