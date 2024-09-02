@@ -70,12 +70,13 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.hilt)
     kapt(libs.hilt.compiler)
+    implementation(libs.hilt.compose)
 
     implementation(libs.retrofit)
     implementation(libs.gson)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
     implementation(libs.coil)
-    implementation(libs.hilt.compose)
+
 
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
